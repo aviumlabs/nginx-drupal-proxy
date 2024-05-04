@@ -5,6 +5,8 @@ This repo builds an Nginx Drupal Proxy docker image.
 
 This image is based on the Nginx Alpine docker image.   
 
+The proxy configuration file is in etc/nginx/conf.d/drupal.conf. 
+
 
 ## Naming Convention
 
@@ -64,8 +66,13 @@ To build a specific version of Nginx; edit the Dockerfile and change
 version to the one you want to build:   
 
 
-
 ## Run
+
+
+This image is not designed to be run standalone; but can be by editing the 
+included etc/nginx/conf.d/drupal.conf file.  
+
+__Comment out the line `fastcgi_pass drupal:9000;` and rebuild the image.__
 
 
 Run the docker image to confirm alpine version:
