@@ -1,0 +1,31 @@
+# docker compose
+docker-compose.yml
+
+# environment file
+.env
+
+# Apple
+.DS_Store
+
+# git
+.git
+.gitignore
+
+# Node.js
+**/node_modules/
+**/dist
+npm-debug.log
+
+# Visual Studio
+.coverage
+.coverage.*
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Aviumlabs specific
+LICENSE
+src
+prepare
